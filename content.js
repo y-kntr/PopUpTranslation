@@ -1,8 +1,8 @@
 document.addEventListener("mouseup", async (event) => {
-  console.log("mouseup event detected"); // デバッグ情報を追加
+  console.log("mouseup event detected"); // デバッグ情報
   const selectedText = window.getSelection().toString().trim();
   if (!selectedText) {
-    console.log("No text selected"); // デバッグ情報を追加
+    console.log("No text selected"); // デバッグ情報
     return;
   }
     const translation = await translateWithGemini(selectedText);
